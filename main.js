@@ -31,6 +31,7 @@ function pickRandomNum(){
 
 function play(){
     let userValue = userInput.value;
+    
 
     if(userValue<1 || userValue>100){
         resultArea.textContent="1과 100사이 숫자를 입력해 주세요";
@@ -70,11 +71,11 @@ function play(){
 
 function reset(){
     pickRandomNum();
+    history.length=0;
     userInput.value = "";
     resultArea.textContent = "결과 값이 나옵니다"
     gameOver = false;
   playButton.disabled = false;
   chances = 5;
   chanceArea.innerHTML = `남은 기회:${chances}번`;
-  history=[""];
 }
