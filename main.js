@@ -18,7 +18,7 @@ let gameOver = false;
 let chanceArea = document.getElementById("chance-area");
 let history=[];
 
-chanceArea.innerHTML = `남은 기회:${chances}`;
+chanceArea.innerHTML = `남은 기회:${chances}번`;
 playButton.addEventListener("click",play);
 resetButton.addEventListener("click",reset);
 userInput.addEventListener("focus",function(){
