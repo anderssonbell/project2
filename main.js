@@ -30,6 +30,7 @@ function pickRandomNum(){
 }
 
 function play(){
+    pickRandomNum();
     let userValue = userInput.value;
     
 
