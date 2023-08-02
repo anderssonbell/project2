@@ -30,6 +30,7 @@ function pickRandomNum(){
 }
 
 function play(){
+    pickRandomNum();
     let userValue = userInput.value;
     
 
@@ -79,4 +80,3 @@ function reset(){
   chances = 5;
   chanceArea.innerHTML = `남은 기회:${chances}번`;
 }
-pickRandomNum();
